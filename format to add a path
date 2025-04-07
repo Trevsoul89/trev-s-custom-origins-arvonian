@@ -1,0 +1,10 @@
+origin mod id: trevs_magical_origins
+essential power id: "trevs_magical_origins:essence"
+(origin ability 1) basic attack (activation key + not crouching) and power attack (activation key + crouching)
+basic attack uses 10 essence power attack uses 50 essence 
+(origin ability 2) asimilation  activated by the secondary ability key while holding a item
+path should be themed after held item(optional)
+weakness
+passive(optional)
+evolution(optional) done by having some sort of advancment or kill be done to evolve
+evolved basic abilities go from lvl 5 spells to lvl 10 and power ability goes from lvl 10 spells to lvl 20 spells
