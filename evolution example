@@ -1,0 +1,12 @@
+{
+    "type": "origins:self_action_on_kill",
+    "target_condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:wither"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "origin set @s origins:origin trevs_magical_origins:arvo_nether_major"
+    },
+    "cooldown": 1
+}
