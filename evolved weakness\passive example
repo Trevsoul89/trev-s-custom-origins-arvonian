@@ -1,0 +1,42 @@
+{
+    "name": "hydrophoic flesh",
+    "description": "as a resault from assimilating aspects from the nether, you took loss the ability to touch water regular water as it harms your skin and body, but you do get fire immunity and the ability to see while submerged in lava, now you can go into water if you have enough essence",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "water"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "0:essence",
+                    "comparison": "<=",
+                    "compare_to": 10
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:instant_damage",
+                "duration": 40,
+                "amplifier": 0,
+                "show_particles": true,
+                "show_icon": true
+            }
+        }
+    },
+    "key1": {
+        "type": "origins:fire_immunity"
+    },
+    "key2": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 3
+    }
+}
