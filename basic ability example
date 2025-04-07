@@ -1,0 +1,53 @@
+{
+    "name": "flaming dash",
+    "description": "lunge foward in a burning spiral to deal damage and close the distance",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "0:essence",
+                    "comparison": ">=",
+                    "compare_to": 10
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/cast @s burning_dash 5"
+        },
+        "key": "primary"
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "0:essence",
+                    "comparison": ">=",
+                    "compare_to": 10
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "0:essence",
+            "change": -10,
+            "operation": "add"
+        },
+        "key": "primary"
+    }
+}
