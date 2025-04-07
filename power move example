@@ -1,0 +1,51 @@
+{
+    "name": "heatwave camo",
+    "description": "generate a heatwave around yourself and camolauge with air, effectivly becoming invisible",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "0:essence",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "/cast @s invisibility 10"
+        },
+        "key": "primary"
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "0:essence",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "0:essence",
+            "change": -50,
+            "operation": "add"
+        },
+        "key": "primary"
+    }
+}
